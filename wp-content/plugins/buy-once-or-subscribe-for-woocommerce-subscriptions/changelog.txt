@@ -1,0 +1,115 @@
+*** Buy Once or Subscribe for WooCommerce Subscriptions ***
+
+2025-04-30 - version 5.1.1
+* New - Set default value for Allow plan selection in cart setting
+
+2025-04-28 - version 5.1.0
+* New - Choose the purchase option on the cart page
+* Fix - After saving a new global plan, the Allow plan selection in the cart setting is unchecked
+* Update - Hide subscription plan dropdown when there is only one subscription plan
+* Update - Create a function that checks if an item in the cart is a BOS item
+* Fix - Coupon restrictions not applied when products bought as subscriptions are excluded from coupons.
+* Fix - Fix PHP warning
+
+2024-11-19 - version 5.0.1
+* Fix - Fatal error when updating variable products
+* Update - Subscription plan and price selection function
+
+2024-10-30 - version 5.0.0
+* New - Variation-specific subscription plans
+* Update - Create a new plan selection and price calculation function
+* Fix - Coupons are not applied correctly in the cart
+* Fix - Set 0 as the default discount value if the discount field is left empty.
+* Update - Change logic for string settings.
+
+2024-07-25 - version 4.2.0
+* New - Fixed price subscription discounts
+* Update - Create plan price calculation function/method
+* Fix - Fix bug for string settings.
+
+2024-02-12 - version 4.1.0
+* Dev: New - Setting to exclude products bought as subscriptions from coupons
+* Dev: New - Add back-end settings for editing strings on the front-end product page
+* Dev: New - Create global subscriptions functionality
+* Dev: Update - Remove compatibility with WooCommerce Payments.
+* Dev: Fix - Allow adding recurring coupons from the back-end subscription edit page to products bought as subscriptions
+* Dev: Update - Update translation template
+
+2023-07-20 - version 4.0.0
+* Dev: New - Code refactoring for WooCommerce HPOS compatibility.
+* Dev: New - Update review notice
+* Dev: New - Add documentation link to the settings page
+* Dev: New - Create upsell notice
+* Dev: New - Create a filter for frequency dropdown label
+* Dev: New - Compatible with the WooCommerce Add to Cart button text filter
+* Dev: Bug - The dropdown selection does not get updated when Composite/Bundle product selection is made
+* Dev: New - Filter for changing the text for the One time buy option
+
+2023-03-09 - version 3.2.0
+* Dev: New - Add to cart link for subscription options
+* Dev: New - Filter for changing the text for the subscription option
+* Dev: New - Update minimum requirements
+
+2023-02-16 - version 3.1.0
+* Dev: New - Compatible with WooCommerce Payments.
+* Dev: New - Use 'Add to Cart Button Text' from WooCommerce Subscriptions settings
+
+2022-12-12 - version 3.0.0
+* Dev: New - Code refactoring - included products purchased as subscriptions in WooCommerce Subscriptions cart structure.
+* Dev: New - Add a filter that allows choosing between the regular price and sale price before the discount applies.
+* Dev: New - Create a filter to change the string next to the price.
+
+2022-09-22 - version 2.0.1
+* Dev: New - Add filter hook to change string in subscription plan dropdown on product page.
+* Dev: Bug - Fix frequency is displayed twice in the subscription details.
+* Dev: Bug - Fix [Renew now] button not opening checkout page correctly.
+* Dev: Bug - Fix Mini cart displys prices without discount.
+* Dev: Bug - Fix - Translation for frequency dropdown.
+* Dev: Bug - Fatal error fix for payment gateways.
+
+2022-08-31 - version 2.0.0
+* Dev: New - Add support for Composite products
+* Dev: New - Add support for Bundle products
+* Dev: Bug - Subscriptions tab should not be displayed for subscription type products (on back-end product page)
+
+2022-08-22 - version 1.0.8
+* Dev: Bug - Discount not displayed correctly when prices are entered including tax and displayed excluding tax
+* Dev: Bug - Discount not calculated correctly when the price is displayed inclusive of tax
+* Dev: Bug - More than two decimals may be shown on the cart and checkout pages for the subtotal & total of BOS products
+
+2022-07-18 - version 1.0.7
+* Dev: New - Add translation files support and new CSS class
+* Dev: Bug - Fix subscriptions are not created for an order when the product is purchased by a guest that has no account created
+* Dev: Bug - Fix subscriptions will not be put on hold while having the 'Manual Renewal Payments' options checked
+* Dev: Bug - Fix manual payment gateways displayed when Accept Manual Renewals option was unchecked
+
+2022-06-14 - version 1.0.6
+* Dev: Bug - Fix typo in notice
+* Dev: Bug - Add translation support
+* Dev: Bug - Fix Call to a member function display_prices_including_tax() error
+
+2022-05-26 - version 1.0.5
+* Dev: Bug - Fix typo in notice
+* Dev: Bug - Fix the frequency will not be displayed along the price shown in the order's details IF the product has no discount added for that frequency
+* Dev: New - Add translation support
+* Dev: New - Hide back-end subscriptions tab for grouped and affiliate products
+
+2022-05-17 - version 1.0.4
+* Dev: Bug - Fix subscription text from BOS products with no discount.
+* Dev: Bug - Fix typo in WC Subscription alert
+* Dev: Bug - Plugin author link update
+
+2022-04-07 - version 1.0.3
+* Dev: Bug - Fix Cart multiples total by quantity
+* Dev: Bug - Fix For Variable BOS products the button on the product page is 'Sign up now' even if the 'one time purchase' is checked
+
+2022-03-17 - version 1.0.2
+* Dev: Bug - Update plugin name
+
+2022-03-16 - version 1.0.1
+* Dev: Bug - Fix subscription status change when the order have pending payment
+* Dev: Bug - Fix shipping taxes display on Cart/Checkout
+* Dev: New - Add Get started Settings page
+
+2021-12-23 - version 1.0.0
+* Initial version.

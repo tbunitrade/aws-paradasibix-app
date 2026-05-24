@@ -1,0 +1,351 @@
+# Copyright (C) 2024 eCommerce Tools
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Buy Once or Subscribe for WooCommerce Subscriptions 4.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/buy-once-or-subscribe-for-woocommerce-subscriptions\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-07-24T21:56:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: bos4w\n"
+
+#. Plugin Name of the plugin
+msgid "Buy Once or Subscribe for WooCommerce Subscriptions"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://woocommerce.com/products/buy-once-or-subscribe-for-woocommerce-subscriptions/"
+msgstr ""
+
+#. Description of the plugin
+msgid "This plugin allows shop owners to easily add subscriptions to existing WooCommerce Simple Products."
+msgstr ""
+
+#. Author of the plugin
+msgid "eCommerce Tools"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://ecommercetools.io"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:82
+msgid "Subscriptions"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:114
+#: functions/class-bos4w-admin.php:676
+msgid "Title"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:115
+#: functions/class-bos4w-admin.php:677
+msgid "Text appears above the available purchase options when at least one frequency has been added below."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:116
+#: functions/class-bos4w-admin.php:678
+msgid "e.g. \"Choose frequency\""
+msgstr ""
+
+#: functions/class-bos4w-admin.php:124
+msgid "Use value discount"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:125
+msgid "When checked, you will be able to enter a fixed value discount for each subscription plan."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:144
+#: functions/class-bos4w-admin.php:231
+#: functions/class-bos4w-admin.php:694
+msgid "Drag to sort"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:146
+#: functions/class-bos4w-admin.php:233
+#: functions/class-bos4w-admin.php:696
+msgid "Remove"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:151
+#: functions/class-bos4w-admin.php:259
+#: functions/class-bos4w-admin.php:720
+msgid "Interval"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:153
+#: functions/class-bos4w-admin.php:722
+msgid "Subscription interval"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:159
+#: functions/class-bos4w-admin.php:728
+msgid "Subscription period"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:166
+#: functions/class-bos4w-admin.php:274
+#: functions/class-bos4w-admin.php:735
+msgid "Choose how frequently you would like to bill and ship this item."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:178
+#: functions/class-bos4w-admin.php:285
+msgid "Discount Value"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:179
+#: functions/class-bos4w-admin.php:286
+msgid "Enter the discount value for this subscription plan."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:190
+#: functions/class-bos4w-admin.php:297
+#: functions/class-bos4w-admin.php:747
+msgid "Discount %"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:191
+#: functions/class-bos4w-admin.php:298
+#: functions/class-bos4w-admin.php:748
+msgid "This discount will be applied on the product price if this frequency is chosen."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:206
+#: functions/class-bos4w-admin.php:763
+msgid "No frequency has been defined."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:212
+#: functions/class-bos4w-admin.php:769
+msgid "Add Frequency"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:239
+msgid "Category"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:401
+msgid "Enjoying Buy Once or Subscribe?"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:402
+msgid "If you're happy with our plugin, please help us grow and spread the word by giving a 5-star rating on the WooCommerce page. If you can't find the functionality you're looking for we want to know!"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:412
+msgid "Rate us"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:414
+msgid "Submit feature request"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:422
+msgid "Enhance your Subscriptions website with these useful plugins"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:430
+msgid "Self-service Dashboard for WooCommerce Subscriptions"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:430
+msgid " - A simple interface on top of WooCommerce Subscriptions that allows your customers to manage their subscriptions by themselves."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:474
+msgid "Buy Once or Subscribe"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:489
+msgid "General"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:490
+msgid "Global Subscription"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:514
+msgid "Get started"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:565
+msgid "General settings"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:571
+msgid "Exclude products bought as subscriptions from coupons"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:576
+msgid "When checked, coupon discounts will not be applied to products bought as subscriptions using buy once or subscribe. This will not affect subscription-type products."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:580
+msgid "Subscribe and save text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:585
+msgid "or subscribe and save up to %1$s"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:587
+msgid "Edit the 'Subscribe and save x%' text displayed next to the price. You can use the following values: %1$s - maximum discount."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:591
+msgid "One-time purchase text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:596
+msgid "One-time purchase option"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:598
+msgid "Change the text for the One-time purchase radio option displayed on the product page."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:602
+msgid "Subscribe and save up to text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:607
+msgid "Subscribe and save up to %1$s"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:609
+msgid "Change the text and discount for the radio button for the subscription purchase option displayed on the product page. You can use the following values: %1$s - maximum discount."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:613
+msgid "Frequency text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:618
+msgid "Frequency"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:620
+msgid "Change the text for the frequency dropdown label displayed on the product page."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:625
+msgid "Interval display text"
+msgstr ""
+
+#. translators: Placeholder message
+#. translators: %s: interval & discount
+#: functions/class-bos4w-admin.php:630
+#: functions/class-bos4w-front-end.php:357
+#: functions/templates/single-product/display-subscription-plans.php:53
+msgid "Every %1$s for %2$s %3$s"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:632
+msgid "Change the text, interval, and discount display in the subscription dropdown options on the product page. You can use the following values: %1$s - interval, %2$s - discounted price, %3$s - discount."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:637
+msgid "Select options text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:642
+msgid "Select options button text"
+msgstr ""
+
+#. translators: Placeholder message
+#: functions/class-bos4w-admin.php:644
+msgid "Change text for the \"Select options\" button displayed for buy once or subscribe products."
+msgstr ""
+
+#: functions/class-bos4w-admin.php:670
+msgid "Global subscription plans"
+msgstr ""
+
+#: functions/class-bos4w-admin.php:701
+msgid "Cateogy"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:44
+msgid "Sign up now"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:91
+#: functions/class-bos4w-front-end.php:93
+msgid "Subscribe and save up to"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:96
+msgid "Subscribe"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:130
+msgid "One-time purchase"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:144
+msgid "Frequency:"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:182
+msgid "Choose frequency"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:195
+msgid "Sign up"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:211
+msgid "Select options"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:334
+#: functions/class-bos4w-front-end.php:338
+#: functions/templates/single-product/display-subscription-plans.php:41
+#: functions/templates/single-product/display-subscription-plans.php:44
+msgid "off"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:414
+#: functions/class-bos4w-front-end.php:416
+msgid "or subscribe and save up to"
+msgstr ""
+
+#: functions/class-bos4w-front-end.php:419
+msgid "or subscribe"
+msgstr ""
+
+#. translators: Notice message
+#: functions/class-load-packages.php:139
+msgid "%1$sBuy Once or Subscribe for WooCommerce Subscriptions is inactive.%2$s The %3$sWooCommerce plugin%4$s must be active for Buy Once or Subscribe for WooCommerce Subscriptions to work. Please %5$sinstall & activate WooCommerce &raquo;%6$s"
+msgstr ""
+
+#. translators: Notice message
+#: functions/class-load-packages.php:153
+msgid "%1$sBuy Once or Subscribe for WooCommerce Subscriptions is inactive.%2$s Please install and activate %3$sWooCommerce Subscriptions plugin%4$s for Buy Once or Subscribe for WooCommerce Subscriptions to work."
+msgstr ""
+
+#. translators: %s: missing package
+#: functions/class-load-packages.php:208
+msgid "Missing the SForce %s package"
+msgstr ""
+
+#: functions/class-load-packages.php:212
+msgid "Your installation of SForce is incomplete."
+msgstr ""
