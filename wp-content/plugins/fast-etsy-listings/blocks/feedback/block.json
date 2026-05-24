@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 1,
+  "name": "fast-etsy-listings/feedback",
+  "title": "Fast Etsy Shop Reviews",
+  "category": "common",
+  "icon": "store",
+  "description": "Present details and reviews from your Etsy shop.",
+  "keywords": [
+      "Etsy",
+      "Etsy wordpress plugin",
+      "Etsy reviews",
+      "Etsy shops",
+      "feed",
+      "ecommerce"
+    ],  
+  "textdomain": "fast-etsy-listings",
+  "attributes": {
+    "seller": {
+      "type": "string"
+    },
+    "accountinfo": {
+      "type": "integer"
+    },    
+    "comments": {
+      "type": "integer"
+    },
+    "columns": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "string"
+    },
+    "slideshow": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "script": "feedback-block-editor",
+  "editorScript": "file:./feedback.js",
+  "editorStyle": "file:../editor.css"
+}

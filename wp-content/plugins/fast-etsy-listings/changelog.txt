@@ -1,0 +1,48 @@
+== Changelog ==
+
+= 1.2.11 =
+Fixed bug with loading of single listing items: 'Item ID must be an integer' error.
+
+= 1.2.10 =
+Fixed transient PHP warning when loading subscription info.
+
+= 1.2.9 =
+Fixed bug with sorting by price not working correctly on Search and Shop Listings blocks
+
+= 1.2.8 =
+Fixed bug in Rich Snippet structured data.
+
+= 1.2.7 =
+Fixed bug with using default seller names for Feedback and Search blocks/shortcodes.
+Fixes to translation loading for WordPress 6.7
+
+= 1.2.6 =
+Etsy links now presented with shop name subdomain for Share & Save tracking.
+Fixed issue with slideshows not display properly on first load of page.
+
+= 1.2.5 =
+Added Schema.org Product data for listings.
+Added support to monentize links with Etsy Affiliate Window scheme.
+Fixed minor display bugs with admin settings pages.
+Improved message when old categories can no longer be found.
+
+= 1.2.4 =
+Added option to show listings in a randomized sequence.
+Fixed bug with live block previews
+
+= 0.2.3 =
+Fixed regression issue preventing HTML use in 'no results' message.
+Fixed bug with default seller or category from settings not used in live block previews.
+
+= 0.2.2 =
+Fixed missing icon on Classic editor toolbar
+Fixed issue with only loading featured items.
+
+= 0.2.1 =
+Fixed issue with extra slash characters appearing in titles
+
+= 0.2 =
+Added Etsy Shop Review Block
+
+= 0.1 =
+First official release

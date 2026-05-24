@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ */
+
+.fu_etsy_results_title_editor {
+	vertical-align: middle !important; 
+	width: auto !important;
+	text-decoration: underline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+.fu_etsy_label_editor {
+  margin-bottom: calc(8px);
+}
+
+.fu_etsy_checkbox_editor {
+  margin-bottom: 8px !important;
+}

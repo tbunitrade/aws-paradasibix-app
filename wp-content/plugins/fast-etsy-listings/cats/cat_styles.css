@@ -1,0 +1,87 @@
+
+#fu_etsy_cat_popup_overlay {
+  visibility: hidden;
+  z-index: 200100;
+  position: fixed;
+  background: #ffffff;
+  border: 3px solid #666666;
+  width: 80%;
+  position: fixed; 
+  top: 25%;
+  left: 10%;
+}
+
+#fu_etsy_cat_popup_overlay.active {
+  visibility: visible;
+}
+
+#fu_etsy_cat_popup_content {
+  visibility: hidden;
+  text-align: center;
+}
+
+#fu_etsy_cat_popup_content.active {
+  visibility: visible;
+}
+
+.fu_etsy_cat_popup_catlist_container {
+  display: inline;
+  position: relative;
+}
+
+.fu_etsy_cat_popup_catlist {
+  width: 22.5%;
+}
+
+.fu_etsy_cat_popup_catlist_loading {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: larger;
+}
+
+.fu_etsy_cat_popup_catlist_loading.active {
+  visibility: visible;
+}
+
+#fu_etsy_cat_popup_chosenrow {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#fu_etsy_cat_popup_chosen {
+  width: 50%;
+  margin: 10px;
+}
+
+#fu_etsy_cat_popup_close {
+  color: #fff;
+  background-color: rgb(53, 130, 196)
+}
+
+#fu_etsy_cat_popup_cancel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fu_etsy_cat_popup_button {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 3px;
+  margin: 0.20rem;
+  padding: 5px 15px;
+  font-size: 1rem;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+}
+
+button.fu_etsy_cat_popup_button:hover {
+  border: 1px solid #666666;
+  background: #666666;
+  color: #ffffff;
+}
