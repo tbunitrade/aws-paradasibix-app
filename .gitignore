@@ -20,7 +20,7 @@ google7bf32a28e266c210.html
 
 # WordPress uploads and generated cache
 wp-content/uploads/
-wp-content/plugins/
+#wp-content/plugins/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/backups/
