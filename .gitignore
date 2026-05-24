@@ -1,0 +1,42 @@
+# Ignore a specific file
+secrets.json
+
+# Ignore all files with a specific extension
+*.log
+*.tmp
+.idea
+.htaccess
+.htaccess.bk
+
+
+# Ignore a specific directory and all its contents
+node_modules/
+dist/
+build/
+dummy/
+osg/
+wp-config.php
+google7bf32a28e266c210.html
+
+# WordPress uploads and generated cache
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/debug.log
+wp-content
+ _backup-before-elementor-update
+ _backup-before-elementor-update/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# An exception: ignore all .log files EXCEPT important.log
+!important.log
+
+
+
+
