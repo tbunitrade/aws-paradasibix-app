@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 1,
+  "name": "fast-etsy-listings/shoplistings",
+  "title": "Fast Etsy Shop Listings",
+  "category": "common",
+  "icon": "store",
+  "description": "Presents a list of Etsy Listings from an Etsy shop",
+  "keywords": [
+      "Etsy",
+      "Etsy wordpress plugin",
+      "Etsy listings",
+      "Etsy shop",
+      "feed",
+      "ecommerce"
+    ],  
+  "textdomain": "fast-etsy-listings",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "seller": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "sort": {
+      "type": "string"
+    },
+    "picwidth": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "string"
+    },
+    "slideshow": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "script": "search-block-editor",
+  "editorScript": "file:./shoplistings.js",
+  "editorStyle": "file:../editor.css"
+}

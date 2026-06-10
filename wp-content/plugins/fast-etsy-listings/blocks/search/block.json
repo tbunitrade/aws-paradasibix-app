@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 1,
+  "name": "fast-etsy-listings/search",
+  "title": "Fast Etsy Search",
+  "category": "common",
+  "icon": "store",
+  "description": "Presents a list of Etsy Listings from Etsy based on given search criteria",
+  "keywords": [
+      "Etsy",
+      "Etsy wordpress plugin",
+      "Etsy listings",
+      "Etsy search",
+      "feed",
+      "ecommerce"
+    ],  
+  "textdomain": "fast-etsy-listings",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "searchlocation": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "string"
+    },
+    "picwidth": {
+      "type": "string"
+    },
+    "minprice": {
+      "type": "string"
+    },
+    "maxprice": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "string"
+    },
+    "slideshow": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "script": "search-block-editor",
+  "editorScript": "file:./search.js",
+  "editorStyle": "file:../editor.css"
+}

@@ -1,0 +1,41 @@
+# Secrets / local config
+wp-config.php
+wp-salt.php
+.env
+*.pem
+*.key
+secrets.json
+
+# Logs / temp / cache
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+wp-content/cache/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/backups/
+wp-content/backup-migration/
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/debug.log
+
+# Backups / dumps
+*.sql
+*.zip
+*.tar
+*.tar.gz
+*.wpress
+*.bak
+*.bak.*
+*.old
+*.old.*
+
+# IDE
+.idea/
+.vscode/
+
+# Node/build
+node_modules/
+dist/
+build/

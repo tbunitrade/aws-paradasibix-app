@@ -1,0 +1,87 @@
+#bos4w_data .subscription-selections,
+div[id^="bos4w_data_"] .subscription-selections {
+	padding: 12px 100px 12px 30px;
+}
+
+#bos4w_data .subscription-selections .subscription-details p:last-child,
+div[id^="bos4w_data_"] .subscription-selections .subscription-details p:last-child {
+	display: none;
+}
+
+#bos4w_data .sub-actions,
+div[id^="bos4w_data_"] .sub-actions {
+	float: right;
+	padding: 40px 60px 0;
+	cursor: pointer;
+}
+
+#bos4w_data .sub-actions span,
+div[id^="bos4w_data_"] .sub-actions span {
+	display: block;
+	float: left;
+}
+
+#bos4w_data .this-remove,
+div[id^="bos4w_data_"] .this-remove {
+	cursor: pointer;
+	color: #ff0000;
+	margin-left: 1em
+}
+
+#bos4w_data .drag-drop,
+div[id^="bos4w_data_"] .drag-drop {
+	cursor: move;
+	color: #888;
+}
+
+.subscription_type {
+	border-bottom: 1px solid #CCC;
+}
+
+#bos4w_data .drag-drop,
+div[id^="bos4w_data_"] .drag-drop {
+	float: left;
+	margin: 40px 10px 0;
+}
+
+#woocommerce-product-data ul.product_data_tabs li.cart_subscriptions_tab a:before {
+	content: '\e031';
+	font-family: WooCommerce
+}
+
+.subscription-details p.form-field {
+	float: left;
+}
+
+.subscription-details .wrap .first {
+	margin-right: 10px;
+}
+
+#bos4w_data .subscription_pricing_method .subscription_price label,
+#bos4w_data .subscription_pricing_method .subscription_price_discount label,
+div[id^="bos4w_data_"] .subscription_pricing_method .subscription_price label,
+div[id^="bos4w_data_"] .subscription_pricing_method .subscription_price_discount label {
+	margin-left: -174px;
+}
+
+#bos4w_data #product_cat,
+div[id^="bos4w_data_"] #product_cat {
+	margin-left: 10px;
+}
+
+.bos4w-message-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.bos4w-message-wrap > div {
+	padding: 10px;
+}
+
+.bos4w-dismiss-notice i {
+	color: #EEBD01;
+}
+
+.bos4w-notice-wrap .button-primary.bos4w-dismiss-notice {
+	color: #FFF !important;
+}
