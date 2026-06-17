@@ -77,3 +77,41 @@ add_action('wp_head', function () {
 
     echo '<style>.bos4w-display-wrap{margin:0 0 16px 0; width:100%;}</style>';
 });
+
+// ACF Vimeo video embed shortcode: [acf_video_embed]
+// Reads ACF field "vimeo_video_link" from current post/blog and renders Vimeo iframe via oEmbed.
+add_shortcode('acf_video_embed', function () {
+    if ( ! is_singular() ) {
+        return '';
+    }
+
+    $post_id = get_the_ID();
+
+    if ( ! $post_id ) {
+        return '';
+    }
+
+    $url = '';
+
+    if ( function_exists('get_field') ) {
+        $url = get_field('vimeo_video_link', $post_id);
+    }
+
+    if ( ! $url ) {
+        $url = get_post_meta($post_id, 'vimeo_video_link', true);
+    }
+
+    $url = trim((string) $url);
+
+    if ( ! $url ) {
+        return '';
+    }
+
+    $embed = wp_oembed_get($url);
+
+    if ( ! $embed ) {
+        return '<p>Video unavailable.</p>';
+    }
+
+    return '<div class="acf-video-embed">' . $embed . '</div>';
+});
