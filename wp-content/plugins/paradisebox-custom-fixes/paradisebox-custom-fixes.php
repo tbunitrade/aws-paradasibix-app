@@ -192,3 +192,126 @@ function pb_block_bad_cf7_email_domain($result, $tag) {
 
     return $result;
 }
+
+
+// Newsletter popup control: show Elementor popup #161 only for new visitors.
+add_action('wp_footer', function () {
+    if (is_admin()) {
+        return;
+    }
+
+    if (is_user_logged_in()) {
+        return;
+    }
+
+    $popup_id = 161;
+    ?>
+    <script>
+    (function () {
+        const POPUP_ID = <?php echo (int) $popup_id; ?>;
+        const COOKIE_NAME = 'pb_newsletter_popup_done';
+        const SESSION_NAME = 'pb_newsletter_popup_seen_this_session';
+
+        function getCookie(name) {
+            return document.cookie
+                .split('; ')
+                .find(row => row.startsWith(name + '='));
+        }
+
+        function setCookie(name, value, days) {
+            const maxAge = days * 24 * 60 * 60;
+
+            document.cookie = name + '=' + encodeURIComponent(value)
+                + '; Max-Age=' + maxAge
+                + '; Path=/'
+                + '; SameSite=Lax'
+                + (location.protocol === 'https:' ? '; Secure' : '');
+        }
+
+        function shouldSkipPopup() {
+            if (document.body && document.body.classList.contains('logged-in')) {
+                return true;
+            }
+
+            if (getCookie(COOKIE_NAME)) {
+                return true;
+            }
+
+            if (sessionStorage.getItem(SESSION_NAME)) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function markClosed() {
+            setCookie(COOKIE_NAME, 'closed', 14);
+            sessionStorage.setItem(SESSION_NAME, '1');
+        }
+
+        function markSubmitted() {
+            setCookie(COOKIE_NAME, 'submitted', 365);
+            sessionStorage.setItem(SESSION_NAME, '1');
+        }
+
+        function openPopup() {
+            if (shouldSkipPopup()) {
+                return;
+            }
+
+            if (
+                window.elementorProFrontend &&
+                elementorProFrontend.modules &&
+                elementorProFrontend.modules.popup
+            ) {
+                sessionStorage.setItem(SESSION_NAME, '1');
+                elementorProFrontend.modules.popup.showPopup({ id: POPUP_ID });
+            }
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(openPopup, 5000);
+        });
+
+        document.addEventListener('click', function (event) {
+            if (
+                event.target.closest('.dialog-close-button') ||
+                event.target.closest('.dialog-lightbox-close-button') ||
+                event.target.closest('.elementor-popup-modal .dialog-close-button') ||
+                event.target.closest('.elementor-popup-modal .dialog-lightbox-close-button')
+            ) {
+                markClosed();
+            }
+        });
+
+        if (window.jQuery) {
+            jQuery(window).on('elementor-pro/forms/new-record-success', function () {
+                markSubmitted();
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            if (!document.body) {
+                return;
+            }
+
+            const observer = new MutationObserver(function () {
+                const successMessage = document.querySelector(
+                    '.elementor-message-success, .elementor-form .elementor-message-success'
+                );
+
+                if (successMessage) {
+                    markSubmitted();
+                }
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
+    })();
+    </script>
+    <?php
+}, 100);
+
