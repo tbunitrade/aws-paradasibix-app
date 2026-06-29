@@ -115,3 +115,80 @@ add_shortcode('acf_video_embed', function () {
 
     return '<div class="acf-video-embed">' . $embed . '</div>';
 });
+
+add_filter('wpcf7_validate_email*', 'pb_block_bad_cf7_email', 20, 2);
+add_filter('wpcf7_validate_email', 'pb_block_bad_cf7_email', 20, 2);
+
+function pb_block_bad_cf7_email($result, $tag) {
+    $blocked_emails = array(
+        'paradiseinabox@tkbuddy.com',
+    );
+
+    $name = $tag->name;
+
+    if (!$name) {
+        return $result;
+    }
+
+    $submission = WPCF7_Submission::get_instance();
+
+    if (!$submission) {
+        return $result;
+    }
+
+    $posted_data = $submission->get_posted_data();
+
+    if (empty($posted_data[$name])) {
+        return $result;
+    }
+
+    $email = strtolower(trim($posted_data[$name]));
+
+    if (in_array($email, $blocked_emails, true)) {
+        $result->invalidate($tag, 'This email address is not allowed.');
+    }
+
+    return $result;
+}
+
+
+add_filter('wpcf7_validate_email*', 'pb_block_bad_cf7_email_domain', 20, 2);
+add_filter('wpcf7_validate_email', 'pb_block_bad_cf7_email_domain', 20, 2);
+
+function pb_block_bad_cf7_email_domain($result, $tag) {
+    $blocked_domains = array(
+        'tkbuddy.com',
+    );
+
+    $name = $tag->name;
+
+    if (!$name) {
+        return $result;
+    }
+
+    $submission = WPCF7_Submission::get_instance();
+
+    if (!$submission) {
+        return $result;
+    }
+
+    $posted_data = $submission->get_posted_data();
+
+    if (empty($posted_data[$name])) {
+        return $result;
+    }
+
+    $email = strtolower(trim($posted_data[$name]));
+
+    if (!is_email($email)) {
+        return $result;
+    }
+
+    $domain = substr(strrchr($email, '@'), 1);
+
+    if (in_array($domain, $blocked_domains, true)) {
+        $result->invalidate($tag, 'This email domain is not allowed.');
+    }
+
+    return $result;
+}
